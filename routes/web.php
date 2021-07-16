@@ -35,6 +35,6 @@ Route::group(['prefix' => 'admin'], function(){
     Route::get('tableShow/{id}', [HomeController::class, 'tableShow']);
     Route::post('tableUpdate', [HomeController::class, 'tableUpdate'])->name('tableUpdate');
     Route::get('tableDestroy/{id}', [HomeController::class, 'tableDestroy']);
-
+    Route::get('logout', [HomeController::class, 'logout'])->name('logout');
 });
 
